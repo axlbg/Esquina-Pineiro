@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "public": "dist/esquina/browser",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}
