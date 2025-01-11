@@ -1,5 +1,5 @@
 .nav {
-  background-color: #333;
+  background-color: rgb(30, 18, 10);
   color: white;
   font-size: 1.5rem;
 }
@@ -75,7 +75,7 @@
     width: 70%;
     height: 100%;
     position: fixed;
-    background-color: #333;
+    background-color: rgb(30, 18, 10);
     top: 0;
     right: 0;
     z-index: 1;
