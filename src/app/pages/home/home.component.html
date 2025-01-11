@@ -1,4 +1,27 @@
 <section class="section-white">
-  <img [src]="img_fondo" alt="logo fondo" class="img" />
+  <div appScreenOnUse>
+    <img [src]="img_fondo" alt="logo fondo" class="img" />
+  </div>
 </section>
-<section class="section-black"></section>
+
+<section class="section-black">
+  <div appScreenOnUse>
+    <img [src]="img_news" alt="logo fondo" class="img" />
+  </div>
+</section>
+
+<section class="section-white">
+  <div appScreenOnUse>
+    <app-textandimg [img]="img_carta" [txt]="txt_carta"></app-textandimg>
+  </div>
+</section>
+
+<section class="section-black">
+  <div appScreenOnUse>
+    <app-textandimg
+      [img]="img_compartir"
+      [txt]="txt_compartir"
+      [reverse]="true"
+    ></app-textandimg>
+  </div>
+</section>

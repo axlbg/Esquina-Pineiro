@@ -59,6 +59,10 @@
   flex-flow: row;
 }
 
+.a {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .navbar-brand {
     min-height: 70px;

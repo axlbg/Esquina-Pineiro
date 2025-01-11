@@ -22,7 +22,7 @@ export class ScreenOnUseDirective {
 
     this.renderer.setStyle(this.el.nativeElement, 'margin', 'auto');
     if (width > 1024) {
-      this.renderer.setStyle(this.el.nativeElement, 'width', '67%');
+      this.renderer.setStyle(this.el.nativeElement, 'width', '80%');
     } else {
       this.renderer.setStyle(this.el.nativeElement, 'width', '100%');
     }
