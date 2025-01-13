@@ -1,14 +1,18 @@
-<div class="container" [ngClass]="{ 'row-reverse': reverse }">
-  <div class="marco-externo">
-    <div class="marco-interno">
-      <img
-        [src]="img"
-        alt="img"
-        class="img"
-        [height]="height"
-        [width]="width"
-      />
+<div class="container" [ngClass]="{ reverse: reverse }">
+  <div class="content-image">
+    <div class="marco-externo">
+      <div class="marco-interno">
+        <img
+          [src]="img"
+          alt="img"
+          class="img"
+          [height]="height"
+          [width]="width"
+        />
+      </div>
     </div>
   </div>
-  <p class="txt">{{ txt }}</p>
+  <div class="content-text">
+    <p class="p">{{ txt }}</p>
+  </div>
 </div>

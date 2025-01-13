@@ -1,26 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   display: flex;
-  flex-flow: row;
   align-items: center;
-  justify-content: space-around;
-  margin: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  text-align: left;
 }
 
-.row-reverse {
-  flex-flow: row-reverse;
+.reverse {
+  flex-direction: row-reverse;
 }
 
-.txt {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
+.content-image {
+  flex: 1;
+  max-width: 500px;
+  padding: 10px;
+}
+
+.content-text {
+  flex: 1;
+  max-width: 500px;
+  padding: 20px;
 }
 
 .marco-externo {
   position: relative;
-  width: 520px;
-  height: 430px;
+  width: 500px;
+  height: 410px;
   background-color: white;
   border: 5px solid black;
   display: flex;
@@ -29,8 +41,8 @@
 }
 
 .marco-interno {
-  width: 480px;
-  height: 400px;
+  width: 460px;
+  height: 380px;
   background-color: rgb(200, 200, 200);
   border: 3px solid black;
   display: flex;
@@ -47,4 +59,19 @@
     0 92%,
     0 8%
   );
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
+  }
+
+  .content-text {
+    text-align: center;
+  }
 }

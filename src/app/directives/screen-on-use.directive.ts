@@ -4,7 +4,6 @@ import {
   Renderer2,
   HostListener,
   Input,
-  SimpleChanges,
 } from '@angular/core';
 
 @Directive({
@@ -29,6 +28,6 @@ export class ScreenOnUseDirective {
   }
 
   ngOnInit() {
-    this.onResize(); // Ejecuta la lógica al cargar la página
+    this.onResize();
   }
 }

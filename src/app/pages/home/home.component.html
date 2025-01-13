@@ -1,27 +1,24 @@
-<section class="section-white">
-  <div appScreenOnUse>
-    <img [src]="img_fondo" alt="logo fondo" class="img" />
-  </div>
+<section class="section">
+  <img [src]="img_fondo" alt="logo fondo" class="img" />
 </section>
 
-<section class="section-black">
-  <div appScreenOnUse>
-    <img [src]="img_news" alt="logo fondo" class="img" />
-  </div>
+<section class="section dark">
+  <img [src]="img_news" alt="logo fondo" class="img" />
 </section>
 
-<section class="section-white">
-  <div appScreenOnUse>
-    <app-textandimg [img]="img_carta" [txt]="txt_carta"></app-textandimg>
-  </div>
+<section class="section">
+  <h1 class="h1">Nuestros carta</h1>
+  <app-textandimg [img]="img_carta" [txt]="txt_carta"></app-textandimg>
 </section>
 
-<section class="section-black">
-  <div appScreenOnUse>
-    <app-textandimg
-      [img]="img_compartir"
-      [txt]="txt_compartir"
-      [reverse]="true"
-    ></app-textandimg>
-  </div>
+<section class="section dark">
+  <app-textandimg
+    [img]="img_compartir"
+    [txt]="txt_compartir"
+    [reverse]="true"
+  ></app-textandimg>
+</section>
+
+<section class="section">
+  <h1 class="h1">Nuestros clientes</h1>
 </section>
