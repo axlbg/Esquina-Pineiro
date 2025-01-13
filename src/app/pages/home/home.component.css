@@ -62,3 +62,19 @@
   border-top: 1px solid white;
   border-bottom: 1px solid white;
 }
+
+.horarios {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4em;
+  gap: 4em;
+}
+
+@media (max-width: 767px) {
+  .horarios {
+    flex-flow: column;
+    gap: 0;
+  }
+}

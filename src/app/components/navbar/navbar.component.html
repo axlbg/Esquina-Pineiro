@@ -1,7 +1,10 @@
 <nav class="nav">
   <div class="navbar" appScreenOnUse>
     <div class="navbar-brand">
-      <span>Esquina Piñeiro</span>
+      <span class="clickeable">
+        <img [src]="img_logo" alt="logo" class="img_logo" />
+      </span>
+      <span class="clickeable">Esquina Piñeiro</span>
       <button class="hamburger" (click)="toggleMenu()" appHideOnDesktop>
         &#9776;
       </button>
