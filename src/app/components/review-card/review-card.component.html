@@ -1,0 +1,21 @@
+<div class="review-card">
+  <div class="review-header">
+    <div class="user-icon" *ngIf="!isIconUrl">{{ icon }}</div>
+    <img *ngIf="isIconUrl" [src]="icon" alt="User Icon" class="user-icon-img" />
+    <div>
+      <h3>{{ name }}</h3>
+      <p>{{ date }}</p>
+    </div>
+    <img
+      class="google-icon"
+      src="https://cdn-icons-png.flaticon.com/512/2702/2702602.png"
+      alt="Google Logo"
+    />
+  </div>
+  <div class="review-body">
+    <div class="stars">
+      {{ "★".repeat(stars) }}
+    </div>
+    <p>{{ reviewText }}</p>
+  </div>
+</div>

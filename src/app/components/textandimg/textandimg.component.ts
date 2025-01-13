@@ -12,7 +12,4 @@ export class TextandimgComponent {
   @Input() img = '';
   @Input() txt = '';
   @Input() reverse = false;
-
-  height = '400';
-  width = '400';
 }

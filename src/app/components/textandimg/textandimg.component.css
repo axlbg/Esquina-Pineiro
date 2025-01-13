@@ -31,18 +31,17 @@
 
 .marco-externo {
   position: relative;
-  width: 500px;
-  height: 410px;
+  max-width: 500px;
+  max-height: 410px;
   background-color: white;
   border: 5px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .marco-interno {
-  width: 460px;
-  height: 380px;
   background-color: rgb(200, 200, 200);
   border: 3px solid black;
   display: flex;
@@ -61,6 +60,11 @@
   );
 }
 
+.img {
+  max-height: 380px;
+  width: 460px;
+}
+
 @media (max-width: 767px) {
   .container {
     flex-direction: column;
@@ -73,5 +77,17 @@
 
   .content-text {
     text-align: center;
+  }
+
+  .marco-externo {
+    border: 2px solid black;
+  }
+
+  .marco-interno {
+    border: 1px solid;
+  }
+
+  .img {
+    height: 310px;
   }
 }

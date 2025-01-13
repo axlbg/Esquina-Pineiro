@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 import { ScreenOnUseDirective } from '../../directives/screen-on-use.directive';
 import { TextandimgComponent } from '../../components/textandimg/textandimg.component';
+import { ReviewCarouselComponent } from '../../components/review-carousel/review-carousel.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ScreenOnUseDirective, TextandimgComponent],
+  imports: [ScreenOnUseDirective, TextandimgComponent, ReviewCarouselComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  img_fondo = 'assets/logo2.jpg';
+  img_fondo = 'assets/logo2.png';
   img_news = 'assets/novedad.jpg';
 
   img_carta = 'assets/carta.jpg';

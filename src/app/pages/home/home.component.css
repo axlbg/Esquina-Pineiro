@@ -11,7 +11,27 @@ section {
   color: white;
 }
 
+.footer {
+  background: linear-gradient(to bottom, #87653e, rgba(0, 0, 0, 1));
+  height: 70vh;
+}
+
 .img {
   height: 700px;
   object-fit: contain;
+}
+
+.background {
+  background-image: url("https://cloudfront-us-east-1.images.arcpublishing.com/infobae/D662UCKDGVHBLDJPFDGEJNQNQQ.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #000;
+  margin: 10px auto 0;
 }
