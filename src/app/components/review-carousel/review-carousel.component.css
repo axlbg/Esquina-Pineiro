@@ -16,6 +16,7 @@
   flex: 0 0 33.33%;
   box-sizing: border-box;
   padding: 10px;
+  text-align: center;
 }
 
 .carousel-button {
@@ -46,4 +47,14 @@
 
 .carousel-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    padding-left: 4em;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+  }
 }

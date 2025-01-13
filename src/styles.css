@@ -40,3 +40,25 @@ td {
 html {
   scroll-behavior: smooth;
 }
+
+h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 60px;
+}
+h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+}

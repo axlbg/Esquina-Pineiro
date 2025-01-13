@@ -55,6 +55,11 @@ export class ReviewCarouselComponent {
   ngOnInit(): void {
     // Duplica el arreglo para crear el efecto infinito
     this.reviews = [...this.reviews, ...this.reviews];
+
+    // Escucha los cambios de tamaño de la ventana
+    window.addEventListener('resize', () => {
+      this.updateCarouselPosition(); // Actualiza la posición cuando cambia el tamaño de la pantalla
+    });
   }
 
   prevSlide(): void {
@@ -95,6 +100,10 @@ export class ReviewCarouselComponent {
 
   private updateCarouselPosition(): void {
     const track = document.querySelector('.carousel-track') as HTMLElement;
-    track.style.transform = `translateX(-${this.currentSlide * 33.33}%)`;
+    const visibleItems = window.innerWidth <= 768 ? 1 : 3; // 1 en móvil, 3 en desktop
+    const itemWidthPercentage = 100 / visibleItems; // Ancho dinámico
+    track.style.transform = `translateX(-${
+      this.currentSlide * itemWidthPercentage
+    }%)`;
   }
 }

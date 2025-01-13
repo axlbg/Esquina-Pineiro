@@ -16,7 +16,7 @@ export class HomeComponent {
 
   img_carta = 'assets/carta.jpg';
   txt_carta =
-    'Sumamos lattes saborizados, seis blends de té en hebras, especiales ';
+    'Nuestra carta cuenta con el café más rico y muchas opciones dulces y saladas.';
 
   img_compartir = 'assets/compartir.jpg';
   txt_compartir =

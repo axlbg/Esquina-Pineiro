@@ -65,6 +65,10 @@
   width: 460px;
 }
 
+.h3 {
+  text-align: center;
+}
+
 @media (max-width: 767px) {
   .container {
     flex-direction: column;
