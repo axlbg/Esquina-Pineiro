@@ -3,6 +3,7 @@ import { ScreenOnUseDirective } from '../../directives/screen-on-use.directive';
 import { TextandimgComponent } from '../../components/textandimg/textandimg.component';
 import { ReviewCarouselComponent } from '../../components/review-carousel/review-carousel.component';
 import { HorariosComponent } from '../../components/horarios/horarios.component';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -12,11 +13,14 @@ import { HorariosComponent } from '../../components/horarios/horarios.component'
     TextandimgComponent,
     ReviewCarouselComponent,
     HorariosComponent,
+    NgStyle,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  img_background = 'assets/background.jpg';
+
   img_fondo = 'assets/logo2.png';
   img_news = 'assets/novedad.jpg';
 
