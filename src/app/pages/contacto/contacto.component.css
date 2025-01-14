@@ -2,11 +2,11 @@
   background-color: #1a1a1a;
   color: white;
   text-align: center;
-  padding: 60px 0;
+  padding: 10vh 0;
   margin-bottom: 40px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   background-size: cover;
   background-position: center;
+  height: 30vh;
 }
 
 .contact-header h1 {
