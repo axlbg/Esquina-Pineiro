@@ -1,10 +1,10 @@
 <nav class="nav">
   <div class="navbar" appScreenOnUse>
     <div class="navbar-brand">
-      <span class="clickeable">
+      <span routerLink="/home" class="clickeable">
         <img [src]="img_logo" alt="logo" class="img_logo" />
       </span>
-      <span class="clickeable">Esquina Piñeiro</span>
+      <span class="clickeable" routerLink="/home">Esquina Piñeiro</span>
       <button class="hamburger" (click)="toggleMenu()" appHideOnDesktop>
         &#9776;
       </button>
@@ -33,10 +33,10 @@
         class="navbar-submenu"
         [ngClass]="menuOpen ? 'menu-mobile' : 'menu-desktop'"
       >
-        <li><a class="a">Novedades</a></li>
-        <li><a class="a">Nosotros</a></li>
-        <li><a class="a">Carta</a></li>
-        <li><a class="a">Contacto</a></li>
+        <li><a routerLink="/novedades" class="a">Novedades</a></li>
+        <li><a routerLink="/nosotros" class="a">Nosotros</a></li>
+        <li><a routerLink="/carta" class="a">Carta</a></li>
+        <li><a routerLink="/contacto" class="a">Contacto</a></li>
       </ul>
     </div>
   </div>

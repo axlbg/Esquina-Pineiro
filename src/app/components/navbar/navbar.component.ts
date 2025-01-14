@@ -3,6 +3,7 @@ import { ScreenOnUseDirective } from '../../directives/screen-on-use.directive';
 import { HideOnMobileDirective } from '../../directives/hide-on-mobile.directive';
 import { HideOnDesktopDirective } from '../../directives/hide-on-desktop.directive';
 import { NgClass } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -12,6 +13,7 @@ import { NgClass } from '@angular/common';
     HideOnMobileDirective,
     HideOnDesktopDirective,
     NgClass,
+    RouterLink,
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',

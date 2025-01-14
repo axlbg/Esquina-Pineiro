@@ -1,0 +1,100 @@
+.contact-header {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+  margin-bottom: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-header h1 {
+  font-size: 48px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contact-card {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-card i {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  color: #333;
+  font-size: 24px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+}
+
+.contact-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 5px 0;
+  font-family: Arial, sans-serif;
+}
+
+.how-to-arrive {
+  text-align: center;
+  padding: 40px 0;
+  background-color: rgb(250, 250, 250);
+  margin-top: 40px;
+}
+
+.how-to-arrive h2 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.map-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    flex: 100%;
+  }
+}

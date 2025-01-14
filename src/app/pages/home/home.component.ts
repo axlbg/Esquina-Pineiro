@@ -4,6 +4,7 @@ import { TextandimgComponent } from '../../components/textandimg/textandimg.comp
 import { ReviewCarouselComponent } from '../../components/review-carousel/review-carousel.component';
 import { HorariosComponent } from '../../components/horarios/horarios.component';
 import { NgStyle } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ import { NgStyle } from '@angular/common';
     ReviewCarouselComponent,
     HorariosComponent,
     NgStyle,
+    RouterLink,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
