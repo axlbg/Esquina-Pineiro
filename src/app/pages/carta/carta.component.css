@@ -1,0 +1,30 @@
+.header {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 10vh 0;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.header h1 {
+  font-size: 48px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.carta-info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  height: 250px;
+  width: 250px;
+}

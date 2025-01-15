@@ -1,1 +1,22 @@
-<p>carta works!</p>
+<header
+  class="header"
+  [ngStyle]="{ 'background-image': 'url(' + img_background + ')' }"
+>
+  <h1>CARTA</h1>
+</header>
+<!-- íconos gracias a https://iconarchive.com/ -->
+
+<div class="carta-info">
+  <div>
+    <img [src]="img_comidas" alt="comidas" class="icon" />
+  </div>
+  <app-menu [menu]="menu_comidas"></app-menu>
+  <div>
+    <img [src]="img_bebidas" alt="bebidas" class="icon" />
+  </div>
+  <app-menu [menu]="menu_bebidas"></app-menu>
+  <div>
+    <img [src]="img_desayunos" alt="desayunos" class="icon" />
+  </div>
+  <app-menu [menu]="menu_desayunos"></app-menu>
+</div>

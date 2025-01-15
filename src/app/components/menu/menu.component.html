@@ -1,0 +1,12 @@
+<div class="menus-wrapper">
+  <div class="menu-container" *ngFor="let m of menu">
+    <div class="menu-header">{{ m.header }}</div>
+    <div class="menu-item" *ngFor="let item of m.items">
+      <div class="item-details">
+        <strong class="item-name">{{ item.name }}</strong>
+        <p class="item-description">{{ item.description }}</p>
+      </div>
+      <div class="item-price">${{ item.price }}</div>
+    </div>
+  </div>
+</div>
