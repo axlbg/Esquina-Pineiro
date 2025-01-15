@@ -6,17 +6,23 @@
 </section>
 
 <section class="section dark">
-  <img [src]="img_news" alt="logo fondo" class="img" />
+  <img
+    [src]="img_news"
+    alt="logo fondo"
+    class="img pointer"
+    @fadeIn
+    routerLink="/novedades"
+  />
 </section>
 
-<section class="section">
+<section class="section" @fadeIn>
   <h2 class="h2">Nuestra carta</h2>
   <app-textandimg [img]="img_carta" [txt]="txt_carta"></app-textandimg>
 
   <button class="btn" routerLink="/carta">Ver</button>
 </section>
 
-<section class="section dark">
+<section class="section dark" @fadeIn>
   <app-textandimg
     [img]="img_compartir"
     [txt]="txt_compartir"
@@ -30,7 +36,7 @@
   <button class="btn" routerLink="/nosotros">Ver</button>
 </section>
 
-<section class="section">
+<section class="section" @fadeIn>
   <h2 class="h2">Nuestros clientes</h2>
   <app-review-carousel></app-review-carousel>
 </section>

@@ -5,6 +5,7 @@ import { ReviewCarouselComponent } from '../../components/review-carousel/review
 import { HorariosComponent } from '../../components/horarios/horarios.component';
 import { NgStyle } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +20,14 @@ import { RouterLink } from '@angular/router';
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({ opacity: 0 }), // Inicio: invisible
+        animate('500ms ease-in', style({ opacity: 1 })), // Fin: visible
+      ]),
+    ]),
+  ],
 })
 export class HomeComponent {
   img_background = 'assets/background.jpg';

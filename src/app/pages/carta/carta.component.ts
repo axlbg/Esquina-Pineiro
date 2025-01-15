@@ -1,6 +1,7 @@
 import { NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
 import { MenuComponent } from '../../components/menu/menu.component';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-carta',
@@ -8,6 +9,14 @@ import { MenuComponent } from '../../components/menu/menu.component';
   imports: [NgStyle, MenuComponent],
   templateUrl: './carta.component.html',
   styleUrl: './carta.component.css',
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({ opacity: 0 }), // Inicio: invisible
+        animate('500ms ease-in', style({ opacity: 1 })), // Fin: visible
+      ]),
+    ]),
+  ],
 })
 export class CartaComponent {
   img_background = 'assets/header_carta.jpg';
