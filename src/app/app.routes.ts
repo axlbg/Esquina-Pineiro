@@ -17,6 +17,29 @@ export const routes: Routes = [
       import('./pages/novedades/novedades.component').then(
         (c) => c.NovedadesComponent
       ),
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: '1',
+      },
+      {
+        path: '1',
+        loadComponent: () =>
+          import('./components/novedades/ellas/ellas.component').then(
+            (c) => c.EllasComponent
+          ),
+        data: { animation: 'News1' },
+      },
+      {
+        path: '2',
+        loadComponent: () =>
+          import('./components/novedades/crema/crema.component').then(
+            (c) => c.CremaComponent
+          ),
+        data: { animation: 'News2' },
+      },
+    ],
   },
   {
     path: 'nosotros',

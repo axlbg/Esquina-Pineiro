@@ -1,0 +1,44 @@
+/* Estilos generales */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espacio entre las imágenes */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  padding: 10vh;
+  background-color: azure;
+}
+
+/* Estilo de cada imagen */
+.gallery-item {
+  flex: 1 1 calc(33.333% - 20px); /* Tres columnas por fila, con margen */
+  max-width: calc(33.333% - 20px); /* Limita el ancho */
+  box-sizing: border-box;
+}
+
+.gallery-item img {
+  width: 100%; /* Hace que la imagen ocupe todo el espacio disponible */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de zoom al pasar el mouse */
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 1 1 calc(50% - 20px); /* Dos columnas por fila */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    flex: 1 1 100%; /* Una columna por fila */
+    max-width: 100%;
+  }
+}

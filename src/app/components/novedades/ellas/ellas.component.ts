@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './ellas.component.html',
-  styleUrl: './ellas.component.css',
+  styleUrls: ['../styles.css', './ellas.component.css'],
 })
 export class EllasComponent {
   img_news = 'assets/novedad.jpg';
